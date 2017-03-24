@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/continueLayout"
+        android:layout_alignParentTop="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!--姓名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/addressTextView"
+                    android:text="姓名:" />
+
+                <EditText
+                    android:id="@+id/GuestName"
+                    style="@style/addressEditText"
+                    android:hint="姓名"
+                    android:maxLength="15"
+                    android:maxLines="1" />
+            </LinearLayout>
+            <!--地址-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/addressTextView"
+                    android:text="详细地址:" />
+
+                <EditText
+                    android:id="@+id/GuestAddress"
+                    style="@style/addressEditText"
+                    android:hint="输入详细地址"
+                    android:maxLength="50"
+                    android:maxLines="2" />
+            </LinearLayout>
+            <!--电话-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/addressTextView"
+                    android:text="电话:" />
+
+                <EditText
+                    android:id="@+id/GuestPhone"
+                    style="@style/addressEditText"
+                    android:hint="输入电话号码"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:maxLines="1"
+
+                    />
+            </LinearLayout>
+
+            <!--备注-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/addressTextView"
+                    android:text="备注:" />
+
+                <EditText
+                    android:id="@+id/GuestRemark"
+                    style="@style/addressEditText"
+                    android:hint="输入备注"
+                    android:inputType="textMultiLine"
+                    android:maxLength="90"
+                    android:maxLines="3" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

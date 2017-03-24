@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/total"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/goods_checkbox_pic"
+            android:drawablePadding="25dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="0dp"
+            android:text="货到付款"
+            android:textColor="@color/delivier_color_selector"
+            android:theme="@style/MyCheckBox" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/e_wallet_checkbox_pic"
+            android:drawablePadding="25dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="0dp"
+            android:text="在线支付"
+            android:textColor="@color/delivier_color_selector"
+            android:theme="@style/MyCheckBox" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="总价:"
+            android:textColor="@color/colorDescribeName"
+            android:textSize="17dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="￥456.5"
+            android:textColor="@color/colorIndicator"
+            android:textSize="25dp" />
+    </RelativeLayout>
+</RelativeLayout>
